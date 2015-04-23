@@ -1,0 +1,10 @@
+nodejs:
+  image: nodejs
+  ports:
+    - "5000"
+
+worker:
+  build: .
+  command: CMD service nginx
+  links:
+    - nodejs
