@@ -1,3 +1,4 @@
 image: google/nodejs
 script:
  - npm install nodemon -g
+ - sleep 10
